@@ -1,0 +1,47 @@
+$Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+.quotes {
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quote {
+  background: $Dark-Blue-testimonials-background;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  p {
+    padding-bottom: 1rem;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  img {
+    height: 2rem;
+    border-radius: 50%;
+  }
+  h5 {
+    font-weight: 400;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.quote:nth-of-type(1) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 1.5rem;
+    background-image: url("./images/bg-quotes.png");
+    background-size: cover;
+    transform: translateY(-100%);
+  }
+}

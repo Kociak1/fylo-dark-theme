@@ -1,0 +1,12 @@
+.cards {
+  padding-top: 6rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.card {
+  text-align: center;
+  img {
+    display: inline-block;
+  }
+}

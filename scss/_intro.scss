@@ -1,0 +1,17 @@
+$Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+.intro {
+  text-align: center;
+  background-color: $Dark-Blue-intro-and-email-sign-up-background;
+  background-image: url("./images/bg-curvy-mobile.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 2rem;
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+  p {
+    padding-bottom: 1rem;
+  }
+}

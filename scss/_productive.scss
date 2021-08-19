@@ -1,0 +1,17 @@
+$Cyan: hsl(176, 68%, 64%);
+
+.productive {
+  padding-top: 6rem;
+  .ilustration {
+    width: 100%;
+  }
+}
+
+a {
+  color: $Cyan;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid $Cyan;
+}

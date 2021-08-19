@@ -1,0 +1,28 @@
+$White: hsl(0, 0%, 100%);
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+
+input {
+  padding: 1rem;
+  width: 80%;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  color: $White;
+  background: linear-gradient(to right, $Cyan, $Blue);
+}
+
+input[type="email"] {
+  background: $White;
+  color: black;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.425);
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(to right, hsl(176, 68%, 74%), hsl(198, 60%, 60%));
+  cursor: pointer;
+}

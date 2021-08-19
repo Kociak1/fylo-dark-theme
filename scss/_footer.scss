@@ -1,0 +1,86 @@
+$Dark-Blue-main-background: hsl(218, 28%, 13%);
+$Dark-Blue-footer-background: hsl(216, 53%, 9%);
+$White: hsl(0, 0%, 100%);
+$Cyan: hsl(176, 68%, 64%);
+
+footer {
+  padding-top: 15rem;
+  background-color: $Dark-Blue-footer-background;
+  position: relative;
+  ul {
+    text-transform: uppercase;
+    list-style: none;
+    padding-top: 2rem;
+  }
+  li {
+    padding-top: 1rem;
+  }
+  ol li {
+    margin-left: 1.5rem;
+  }
+}
+
+.started {
+  max-width: 800px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: calc(100% - 2rem);
+  background-color: $Dark-Blue-main-background;
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.425);
+  p {
+    margin-bottom: 2rem;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer {
+  padding: 1rem;
+}
+
+#email {
+  list-style-image: url("./images/icon-email.svg");
+}
+
+#phone {
+  list-style-image: url("./images/icon-phone.svg");
+}
+
+#location {
+  list-style-image: url("./images/icon-location.svg");
+}
+
+svg {
+  fill: $White;
+  height: 1rem;
+  width: 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $White;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  &:hover {
+    border-color: $Cyan;
+    svg {
+      fill: $Cyan;
+    }
+  }
+}
+.socials {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}

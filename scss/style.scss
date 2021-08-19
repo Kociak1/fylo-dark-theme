@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+@import "./navigation";
+@import "./intro";
+@import "./cards";
+@import "./productive";
+@import "./quotes";
+@import "./button";
+@import "./footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+$Dark-Blue-main-background: hsl(218, 28%, 13%);
+$Dark-Blue-footer-background: hsl(216, 53%, 9%);
+$Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+
+$Light-Red-error: hsl(0, 100%, 63%);
+
+$White: hsl(0, 0%, 100%);
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+
+  background-color: $Dark-Blue-main-background;
+  color: $White;
+}
+
+h3 {
+  font-size: 1.563rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer ul li:hover {
+  font-weight: bold;
+}
+a:hover {
+  color: $White;
+  border-color: $White;
+  svg {
+    fill: $White;
+  }
+}
+
+h3,
+h4,
+h5,
+nav ul li {
+  font-family: "Raleway", sans-serif;
+}
+
+#error {
+  color: $Light-Red-error;
+  display: none;
+  text-align: left;
+}
+
+@media (min-width: 1440px) {
+  nav {
+    padding: 2rem 3rem;
+  }
+
+  .intro {
+    padding-left: 32%;
+    padding-right: 32%;
+    background-image: url("./images/bg-curvy-desktop.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .cards {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+  }
+
+  .productive {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .quotes {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-direction: row;
+
+    .quote {
+      padding-top: 2rem;
+      aspect-ratio: 8/3;
+    }
+    .quote:nth-of-type(1)::before {
+      z-index: -1;
+      top: 0.5rem;
+      width: 4rem;
+      height: 3rem;
+    }
+  }
+
+  footer {
+    .footer {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    ul {
+      padding-top: 0;
+    }
+    .started {
+      text-align: center;
+      input {
+        width: 30%;
+        display: inline-block;
+        &[type="email"] {
+          width: 60%;
+          margin-right: 1rem;
+        }
+      }
+      #error {
+        padding-left: 8%;
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    gap: 2rem;
+    .socials {
+      margin: 0;
+    }
+  }
+}
